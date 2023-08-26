@@ -12,3 +12,4 @@
 
 ### Problema seleccionado:
 ![Problema1_4](https://github.com/404954-TomasRivetta/Actividad-Semana-02/assets/142633318/c3f83dba-aeeb-4192-88c5-8df5ee603089)
+![ultimaConsignaDelProblema](https://github.com/404954-TomasRivetta/Actividad-Semana-02/assets/142633318/2d5fc179-4974-4562-913b-9aebbf594b5e)
