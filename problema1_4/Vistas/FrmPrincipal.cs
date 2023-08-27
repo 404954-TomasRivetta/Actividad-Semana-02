@@ -1,0 +1,41 @@
+﻿using problema1_4.Vistas.Equipo;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace problema1_4.Vistas
+{
+    public partial class FrmPrincipal : Form
+    {
+        public FrmPrincipal()
+        {
+            InitializeComponent();
+        }
+
+        private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmNuevoEquipo nuevoEquipo = new FrmNuevoEquipo();
+            nuevoEquipo.ShowDialog();
+        }
+
+        private void registrarJugadorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmRegistrarJugador nuevoJugador = new FrmRegistrarJugador();
+            nuevoJugador.ShowDialog();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Seguro desea salir?", "Control", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+    }
+}
