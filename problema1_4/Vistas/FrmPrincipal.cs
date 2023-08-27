@@ -37,5 +37,15 @@ namespace problema1_4.Vistas
                 this.Close();
             }
         }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void equipoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -65,6 +65,9 @@ namespace problema1_4.Vistas.Equipo
                 MessageBox.Show("Complete los campos..","Control",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 return;
             }
+
+
+
         }
     }
 }

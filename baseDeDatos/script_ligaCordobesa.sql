@@ -106,12 +106,6 @@ begin
 	set @next = (SELECT MAX(id_equipo)+1  FROM Equipo);
 end
 
-create procedure sp_proximo_id_jugador
-@prox int output
-as
-begin
-	set @prox = (SELECT MAX(id_jugador)+1  FROM Jugador);
-end
 
 
 

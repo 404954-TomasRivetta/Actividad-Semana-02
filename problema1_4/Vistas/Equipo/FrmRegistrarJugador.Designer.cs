@@ -38,7 +38,6 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.cboPersona = new System.Windows.Forms.ComboBox();
-            this.lblJugadorNro = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.cboPosicion = new System.Windows.Forms.ComboBox();
@@ -48,6 +47,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtFecha = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJugadores)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,7 +63,7 @@
             this.ColNroCamiseta,
             this.ColPosicion,
             this.ColBotones});
-            this.dgvJugadores.Location = new System.Drawing.Point(56, 215);
+            this.dgvJugadores.Location = new System.Drawing.Point(15, 216);
             this.dgvJugadores.Name = "dgvJugadores";
             this.dgvJugadores.ReadOnly = true;
             this.dgvJugadores.Size = new System.Drawing.Size(493, 157);
@@ -103,17 +103,17 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(403, 186);
+            this.btnAgregar.Location = new System.Drawing.Point(323, 181);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(146, 23);
+            this.btnAgregar.Size = new System.Drawing.Size(185, 29);
             this.btnAgregar.TabIndex = 70;
-            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.Text = "Agregar Jugador";
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(344, 378);
+            this.btnCancelar.Location = new System.Drawing.Point(323, 379);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 68;
@@ -123,7 +123,7 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(218, 378);
+            this.btnAceptar.Location = new System.Drawing.Point(160, 379);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(75, 23);
             this.btnAceptar.TabIndex = 67;
@@ -134,25 +134,15 @@
             // 
             this.cboPersona.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboPersona.FormattingEnabled = true;
-            this.cboPersona.Location = new System.Drawing.Point(172, 121);
+            this.cboPersona.Location = new System.Drawing.Point(131, 122);
             this.cboPersona.Name = "cboPersona";
             this.cboPersona.Size = new System.Drawing.Size(306, 21);
             this.cboPersona.TabIndex = 56;
             // 
-            // lblJugadorNro
-            // 
-            this.lblJugadorNro.AutoSize = true;
-            this.lblJugadorNro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblJugadorNro.Location = new System.Drawing.Point(63, 21);
-            this.lblJugadorNro.Name = "lblJugadorNro";
-            this.lblJugadorNro.Size = new System.Drawing.Size(103, 20);
-            this.lblJugadorNro.TabIndex = 54;
-            this.lblJugadorNro.Text = "Jugador Nº ";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(112, 121);
+            this.label1.Location = new System.Drawing.Point(71, 122);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 72;
@@ -161,7 +151,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(112, 153);
+            this.label5.Location = new System.Drawing.Point(71, 154);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(47, 13);
             this.label5.TabIndex = 73;
@@ -171,7 +161,7 @@
             // 
             this.cboPosicion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboPosicion.FormattingEnabled = true;
-            this.cboPosicion.Location = new System.Drawing.Point(172, 150);
+            this.cboPosicion.Location = new System.Drawing.Point(131, 151);
             this.cboPosicion.Name = "cboPosicion";
             this.cboPosicion.Size = new System.Drawing.Size(121, 21);
             this.cboPosicion.TabIndex = 74;
@@ -179,7 +169,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(54, 186);
+            this.label6.Location = new System.Drawing.Point(13, 184);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(105, 13);
             this.label6.TabIndex = 75;
@@ -187,7 +177,7 @@
             // 
             // txtNroCamiseta
             // 
-            this.txtNroCamiseta.Location = new System.Drawing.Point(172, 183);
+            this.txtNroCamiseta.Location = new System.Drawing.Point(131, 181);
             this.txtNroCamiseta.Name = "txtNroCamiseta";
             this.txtNroCamiseta.Size = new System.Drawing.Size(121, 20);
             this.txtNroCamiseta.TabIndex = 76;
@@ -196,7 +186,7 @@
             // 
             this.cboEquipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboEquipo.FormattingEnabled = true;
-            this.cboEquipo.Location = new System.Drawing.Point(172, 85);
+            this.cboEquipo.Location = new System.Drawing.Point(131, 86);
             this.cboEquipo.Name = "cboEquipo";
             this.cboEquipo.Size = new System.Drawing.Size(306, 21);
             this.cboEquipo.TabIndex = 77;
@@ -204,7 +194,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(118, 88);
+            this.label2.Location = new System.Drawing.Point(77, 89);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 78;
@@ -213,7 +203,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(118, 56);
+            this.label3.Location = new System.Drawing.Point(77, 57);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 13);
             this.label3.TabIndex = 80;
@@ -222,17 +212,28 @@
             // txtFecha
             // 
             this.txtFecha.Enabled = false;
-            this.txtFecha.Location = new System.Drawing.Point(170, 53);
+            this.txtFecha.Location = new System.Drawing.Point(131, 54);
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.Size = new System.Drawing.Size(100, 20);
             this.txtFecha.TabIndex = 79;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(134, 18);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(264, 18);
+            this.label4.TabIndex = 81;
+            this.label4.Text = "Registrar Jugadores en un Equipo";
             // 
             // FrmRegistrarJugador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(623, 425);
+            this.ClientSize = new System.Drawing.Size(525, 411);
             this.ControlBox = false;
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtFecha);
             this.Controls.Add(this.label2);
@@ -247,7 +248,6 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.cboPersona);
-            this.Controls.Add(this.lblJugadorNro);
             this.Name = "FrmRegistrarJugador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Liga Cordobesa";
@@ -264,7 +264,6 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.ComboBox cboPersona;
-        private System.Windows.Forms.Label lblJugadorNro;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cboPosicion;
@@ -279,6 +278,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtFecha;
+        private System.Windows.Forms.Label label4;
     }
 }
 

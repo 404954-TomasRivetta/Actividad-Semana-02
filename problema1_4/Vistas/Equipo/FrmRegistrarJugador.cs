@@ -34,7 +34,7 @@ namespace problema1_4
             CargarPersonas();
             CargarPosiciones();
             CargarEquipos();
-            ProximoJugador();
+            cboEquipo.Enabled = true;
         }
 
         private void CargarEquipos()
@@ -60,30 +60,6 @@ namespace problema1_4
             cboEquipo.DataSource = tabla;
             cboEquipo.ValueMember = "id_equipo";
             cboEquipo.DisplayMember = "nombre_equipo";
-        }
-
-        private void ProximoJugador()
-        {
-            SqlConnection conexion = new SqlConnection();
-            conexion.ConnectionString = @"Data Source=PCCESAR;Initial Catalog=ligaCordobesa;Integrated Security=True";
-
-            conexion.Open();
-
-            SqlCommand comando = new SqlCommand();
-            comando.Connection = conexion;
-            comando.CommandType = CommandType.StoredProcedure;
-            comando.CommandText = "sp_proximo_id_jugador";
-            SqlParameter parametro = new SqlParameter();
-            parametro.ParameterName = "@prox";
-            parametro.SqlDbType = SqlDbType.Int;
-            parametro.Direction = ParameterDirection.Output;
-            comando.Parameters.Add(parametro);
-
-            comando.ExecuteNonQuery();
-
-            conexion.Close();
-
-            lblJugadorNro.Text = lblJugadorNro.Text + ": " + parametro.Value.ToString();
         }
 
         private void CargarPosiciones()
@@ -161,6 +137,14 @@ namespace problema1_4
                     return;
                 }
             }
+            foreach (DataGridViewRow fila in dgvJugadores.Rows)
+            {
+                if (fila.Cells["ColNroCamiseta"].Value.ToString().Equals(txtNroCamiseta.Text))
+                {
+                    MessageBox.Show("Esta ocupado ese Num. De camiseta..", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    return;
+                }
+            }
 
             DataRowView item = (DataRowView)cboPersona.SelectedItem;
             DataRowView posicion = (DataRowView)cboPosicion.SelectedItem;
@@ -190,6 +174,7 @@ namespace problema1_4
                 );
 
             btnAceptar.Enabled = true;
+            cboEquipo.Enabled = false;
         }
 
         private void dgvJugadores_CellContentClick(object sender, DataGridViewCellEventArgs e)

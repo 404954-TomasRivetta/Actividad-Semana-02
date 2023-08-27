@@ -28,13 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.equipoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarJugadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.jugadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -44,29 +42,22 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.equipoToolStripMenuItem,
-            this.jugadorToolStripMenuItem,
             this.archivoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(713, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(778, 24);
             this.menuStrip1.TabIndex = 74;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // equipoToolStripMenuItem
             // 
             this.equipoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.consultarToolStripMenuItem,
             this.nuevoToolStripMenuItem,
             this.registrarJugadorToolStripMenuItem});
             this.equipoToolStripMenuItem.Name = "equipoToolStripMenuItem";
             this.equipoToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
             this.equipoToolStripMenuItem.Text = "Equipo";
-            // 
-            // consultarToolStripMenuItem
-            // 
-            this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
-            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
-            this.consultarToolStripMenuItem.Text = "Consultar";
+            this.equipoToolStripMenuItem.Click += new System.EventHandler(this.equipoToolStripMenuItem_Click);
             // 
             // nuevoToolStripMenuItem
             // 
@@ -81,20 +72,6 @@
             this.registrarJugadorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.registrarJugadorToolStripMenuItem.Text = "Registrar Jugador";
             this.registrarJugadorToolStripMenuItem.Click += new System.EventHandler(this.registrarJugadorToolStripMenuItem_Click);
-            // 
-            // jugadorToolStripMenuItem
-            // 
-            this.jugadorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.consultarToolStripMenuItem1});
-            this.jugadorToolStripMenuItem.Name = "jugadorToolStripMenuItem";
-            this.jugadorToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.jugadorToolStripMenuItem.Text = "Jugador";
-            // 
-            // consultarToolStripMenuItem1
-            // 
-            this.consultarToolStripMenuItem1.Name = "consultarToolStripMenuItem1";
-            this.consultarToolStripMenuItem1.Size = new System.Drawing.Size(125, 22);
-            this.consultarToolStripMenuItem1.Text = "Consultar";
             // 
             // archivoToolStripMenuItem
             // 
@@ -115,11 +92,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(713, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(778, 450);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(794, 489);
+            this.MinimumSize = new System.Drawing.Size(794, 489);
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmPrincipal";
+            this.Text = "Liga Cordobesa";
+            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -131,11 +113,8 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem equipoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nuevoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registrarJugadorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem jugadorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
     }
