@@ -12,7 +12,6 @@ namespace problema1_4
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
-        [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();

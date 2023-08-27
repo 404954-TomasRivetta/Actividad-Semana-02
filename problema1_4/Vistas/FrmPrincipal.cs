@@ -1,5 +1,4 @@
-﻿using problema1_4.Vistas.Equipo;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,12 +15,6 @@ namespace problema1_4.Vistas
         public FrmPrincipal()
         {
             InitializeComponent();
-        }
-
-        private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmNuevoEquipo nuevoEquipo = new FrmNuevoEquipo();
-            nuevoEquipo.ShowDialog();
         }
 
         private void registrarJugadorToolStripMenuItem_Click(object sender, EventArgs e)

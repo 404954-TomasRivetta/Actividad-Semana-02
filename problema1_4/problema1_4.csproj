@@ -50,22 +50,16 @@
     <Compile Include="Dominio\Jugador.cs" />
     <Compile Include="Dominio\Persona.cs" />
     <Compile Include="Dominio\Posicion.cs" />
-    <Compile Include="Vistas\Equipo\FrmNuevoEquipo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vistas\Equipo\FrmNuevoEquipo.Designer.cs">
-      <DependentUpon>FrmNuevoEquipo.cs</DependentUpon>
-    </Compile>
     <Compile Include="Vistas\FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vistas\FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Equipo\FrmRegistrarJugador.cs">
+    <Compile Include="Vistas\FrmRegistrarJugador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\Equipo\FrmRegistrarJugador.Designer.cs">
+    <Compile Include="Vistas\FrmRegistrarJugador.Designer.cs">
       <DependentUpon>FrmRegistrarJugador.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -79,10 +73,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Vistas\Equipo\FrmNuevoEquipo.resx">
-      <DependentUpon>FrmNuevoEquipo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\Equipo\FrmRegistrarJugador.resx">
+    <EmbeddedResource Include="Vistas\FrmRegistrarJugador.resx">
       <DependentUpon>FrmRegistrarJugador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\FrmPrincipal.resx">
