@@ -106,8 +106,30 @@ begin
 	set @next = (SELECT MAX(id_equipo)+1  FROM Equipo);
 end
 
+create procedure sp_insertar_maestro
+	@nombre_equipo varchar(150),
+	@director_tecnico varchar(100)
+as
+begin
+	insert into Equipo(nombre_equipo,director_tecnico)
+	VALUES (@nombre_equipo,@director_tecnico)
+end	
 
-
+create procedure sp_insertar_detalle
+	@dni_persona int,
+	@num_camiseta int,
+	@id_posicion int,
+	@id_equipo int
+as
+begin
+	insert into Jugador(
+		dni_persona,
+		num_camiseta,
+		id_posicion,
+		id_equipo
+	)
+	values(@dni_persona,@num_camiseta,@id_posicion,@id_equipo)
+end
 
 /*
 Portero (P)

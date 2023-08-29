@@ -196,5 +196,38 @@ namespace problema1_4
                 this.Close();
             }
         }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            if (cboEquipo.SelectedIndex == -1)
+            {
+                MessageBox.Show("Debe seleccionar un equipo!", "Control",
+                MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            if (dgvJugadores.Rows.Count == 0) {
+                MessageBox.Show("Debe ingresar al menos un jugador!","Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+            GuardarJugadores();
+        }
+
+        private void GuardarJugadores()
+        {
+            DataRowView equipo = (DataRowView)cboEquipo.SelectedItem;
+            int nroEquipo = Convert.ToInt32(equipo.Row.ItemArray[0]);
+
+            if (nuevo.Confirmar(nroEquipo))
+            {
+                MessageBox.Show("Jugadores registrados", "Informe",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("ERROR. No se lograron registrar jugadores al equipo", "Error", MessageBoxButtons.OK,
+                MessageBoxIcon.Error);
+            }
+        }
     }
 }

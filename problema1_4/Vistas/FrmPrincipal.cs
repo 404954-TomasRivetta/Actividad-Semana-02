@@ -40,5 +40,11 @@ namespace problema1_4.Vistas
         {
 
         }
+
+        private void registrarEquipoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmRegistrarEquipo nuevoEquipo = new FrmRegistrarEquipo();
+            nuevoEquipo.ShowDialog();
+        }
     }
 }

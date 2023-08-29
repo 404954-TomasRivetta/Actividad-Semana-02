@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.equipoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarEquipoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarJugadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -51,11 +52,19 @@
             // equipoToolStripMenuItem
             // 
             this.equipoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registrarEquipoToolStripMenuItem,
             this.registrarJugadorToolStripMenuItem});
             this.equipoToolStripMenuItem.Name = "equipoToolStripMenuItem";
             this.equipoToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
             this.equipoToolStripMenuItem.Text = "Equipo";
             this.equipoToolStripMenuItem.Click += new System.EventHandler(this.equipoToolStripMenuItem_Click);
+            // 
+            // registrarEquipoToolStripMenuItem
+            // 
+            this.registrarEquipoToolStripMenuItem.Name = "registrarEquipoToolStripMenuItem";
+            this.registrarEquipoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registrarEquipoToolStripMenuItem.Text = "Registrar Equipo";
+            this.registrarEquipoToolStripMenuItem.Click += new System.EventHandler(this.registrarEquipoToolStripMenuItem_Click);
             // 
             // registrarJugadorToolStripMenuItem
             // 
@@ -107,5 +116,6 @@
         private System.Windows.Forms.ToolStripMenuItem registrarJugadorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registrarEquipoToolStripMenuItem;
     }
 }

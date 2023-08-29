@@ -9,3 +9,4 @@ C:\Users\CESAR\Desktop\toto\repositoriosProg\Actividad-Semana-02\problema1_4\obj
 C:\Users\CESAR\Desktop\toto\repositoriosProg\Actividad-Semana-02\problema1_4\obj\Debug\problema1_4.pdb
 C:\Users\CESAR\Desktop\toto\repositoriosProg\Actividad-Semana-02\problema1_4\obj\Debug\problema1_4.FrmRegistrarJugador.resources
 C:\Users\CESAR\Desktop\toto\repositoriosProg\Actividad-Semana-02\problema1_4\obj\Debug\problema1_4.Vistas.FrmPrincipal.resources
+C:\Users\CESAR\Desktop\toto\repositoriosProg\Actividad-Semana-02\problema1_4\obj\Debug\problema1_4.Vistas.FrmRegistrarEquipo.resources
