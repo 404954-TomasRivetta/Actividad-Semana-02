@@ -18,6 +18,11 @@ namespace problema1_4.Vistas
             nuevo = new Equipo();
         }
 
+        private void FrmRegistrarEquipo_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Seguro desea cancelar la operacion?", "Control", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
@@ -44,7 +49,7 @@ namespace problema1_4.Vistas
 
             if (AgregarEquipo(nombreEquipo, nombreDT))
             {
-                MessageBox.Show("Equipo registrado", "Informe",
+                MessageBox.Show("Equipo registrado con exito", "Informe",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
             }

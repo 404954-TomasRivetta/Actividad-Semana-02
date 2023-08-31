@@ -117,6 +117,7 @@
             this.Name = "FrmRegistrarEquipo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Liga Cordobesa";
+            this.Load += new System.EventHandler(this.FrmRegistrarEquipo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
